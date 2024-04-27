@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1234,2811" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1234,4000" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -111,7 +111,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="800,2746" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="800,3935" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtCheck" />
     </Sequence.Variables>
@@ -120,25 +120,28 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="738,2658" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="738,3847" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,2548" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,3737" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="642,2463" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="CellPhone Numbers.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="642,3652" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="CellPhone Numbers.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,2131" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,3320" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="__https___contacts_google_com__" />
+                    </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,33 +212,181 @@
                         </ActivityAction>
                       </ueab:ExcelForEachRowX.Body>
                     </ueab:ExcelForEachRowX>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Contacts" sap:VirtualizedContainerService.HintSize="546,706" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="bd873a04-ba01-4333-9f8e-0e0e89d3ef31" Version="V2">
-                      <uix:NApplicationCard.Body>
+                    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="546,1115" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://contacts.google.com/">
+                      <ui:OpenBrowser.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,466" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,950" sap2010:WorkflowViewState.IdRef="Sequence_11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'handymanMerge &amp; fix4'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd873a04-ba01-4333-9f8e-0e0e89d3ef31" Version="V3">
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="354,147" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1f4ea10b-2dfb-44ba-9dd0-d6d96d9c9811" InformativeScreenshot="85b685af1cc644253369aff410e30b50" Selector="&lt;html app='chrome.exe' title='Google Contacts' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;gm-coplanar-drawer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' tag='DIV' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="354,147" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6d9ae1f-e7da-4002-bed2-654e847ad264" InformativeScreenshot="eed438b78f3b3c766030bc4eba3d8536" Selector="&lt;webctrl aaname='Merge all' tag='SPAN' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="354,147" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="75fdef84-a8d9-4b1a-88c8-5c0804c596df" InformativeScreenshot="f2ae8970c3fa44c6f40d1470dad14d06" Selector="&lt;html app='chrome.exe' title='Merge &amp;amp; fix' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;gm-coplanar-drawer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' tag='DIV' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="354,147" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="80081d98-b105-4966-ae59-e58ccc108e10" InformativeScreenshot="cdbeb0fd801db604688126185dd83f4a" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' idx='27' tag='SPAN' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="354,147" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="be6ea30f-5329-4c97-b5ad-6328f16d3d61" InformativeScreenshot="b341de2241c4830fd4709d318788db6b" Selector="&lt;webctrl class='GhEnC-RsCWK' idx='3' tag='DIV' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="354,130" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c4a99d8a-313a-4018-b32b-3c6793d0c13e" InformativeScreenshot="1a5b9a6dbe87898a63fe262502c1a327" Selector="&lt;webctrl aaname='Export' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' tag='SPAN' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:OpenBrowser.Body>
+                    </ui:OpenBrowser>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Downloads" sap:VirtualizedContainerService.HintSize="546,780" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="4a950ea1-59a4-422d-bc00-e712b480fbfb" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,466" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'contacts'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="4a950ea1-59a4-422d-bc00-e712b480fbfb" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://contacts.google.com/" CvTextArea="73, 506, 172, 16" CvTextArgument="Merge &amp; fix 4" CvType="Text" DesignTimeRectangle="20, 491, 243, 44" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;gm-coplanar-drawer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='DYhT6b' aaname='' check:innerText='handyman&amp;#xD;&amp;#xA;Merge &amp;amp; fix&amp;#xD;&amp;#xA;4' /&gt;" Guid="95e3d07d-bec3-4a88-95d3-8a29b105eb47" InformativeScreenshot="213a6440052a4b68f625abc4c6021787.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                <uix:TargetAnchorable CvTextArea="222, 126, 46, 11" CvTextArgument="contacts" CvType="Text" DesignTimeRectangle="221, 121, 236, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' role='editable text' check:text='contacts' /&gt;" Guid="8673e09f-4e9a-41f8-89ad-2ee75005c31e" InformativeScreenshot="a2c6e34dda1da4c4fd1f259fd0bd15c8.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd873a04-ba01-4333-9f8e-0e0e89d3ef31" Version="V3">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'contacts'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="4a950ea1-59a4-422d-bc00-e712b480fbfb" Version="V3">
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="https://contacts.google.com/suggestions" CvElementArea="1201, 256, 113, 45" CvTextArea="1226, 271, 61, 16" CvTextArgument="Merge all" CvType="Button" DesignTimeRectangle="1200, 256, 113, 45" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='RBHQF-ksKsZd' css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' idx='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='RBHQF-ksKsZd' type='' aaname='' tag='SPAN' /&gt;" Guid="ad5b8593-a9f9-45bb-9c36-e938ad9b4dad" InformativeScreenshot="94668d6ed34342e5c1a995ffb3d7767c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merge &amp;amp; fix' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                <uix:TargetAnchorable CvTextArea="222, 126, 46, 11" CvTextArgument="contacts" CvType="Text" DesignTimeRectangle="221, 121, 236, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Shell Folder View' cls='SHELLDLL_DefView' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;&lt;ctrl automationid='System.ItemNameDisplay' role='editable text' check:text='contacts' /&gt;" Guid="e3e4328f-0a6d-4cf7-998e-6cf04b52b7c0" InformativeScreenshot="ea620bb8033e5e3ebaf23c64a5792167.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                               </uix:NClick.Target>
                             </uix:NClick>
                           </Sequence>
                         </ActivityAction>
                       </uix:NApplicationCard.Body>
                       <uix:NApplicationCard.TargetApp>
-                        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQSSURBVHhe7ZldaBRXGIbHxGjRC1vQFkXaoKUVQS8qiF5YUFCoVG/EzMwGNaKsaNUWrSARyY9JVpOM6JUKxaIQTfbGi6JeiehNxJkYEP8SIaig9EIlCmtimszX74xn4uTkUza7czI5y7zwQNid+fZ9htnMzFktTpw4ceKMZ5LONM20N2iGXaXp9lkP9jd7jb1XsDFvfaMZzilNd94h7id4523Dti2oGPZ6lHsjyH6ON94+BRHDTqLQoCCYDYPevkon4axEkQFBbCwMeDOUTNIpQYEeQSgXerxZykW3dxMyOYKzlIvutI8WyZl2PlWRmM5MLD0kSOTDkDdTmSTspYREfrCZysS8vY6UyAc2U5mU3f6ZlMgHNlOZ6M78UQL5M59PVyS681QQyIenfKpC0Z0TgkQ+nOBTFUr5rblYPCOI5ELGm6VkDOcwITQ22AxlAzAJJS6NksqeS94MpbPnylQUOSeIZcM5b9+CidFRoZU5zwjRkbBt2LYFmYrrX2imbeL3ugVlu5C3nC7vNfYe2yZOnDhxCiV1LfBdXSss+/Pv98ZG6+WhVVXPU5pub6ZYuP9549KDLw+tTw0kdQs2i5jHYHX5cVi0qQmm8/ETL55wG+xtaINr9W0wYFiv3R/2druTEx30ZY+gyOxwZye73eWVr129CVy9eRR9G5vginkcyvjHRp/qFpiH0heQIcT97XTGnbPjASk4Fr7a+sBdU5OhDoKHYYGjN8JPvMb458wZKDnaChZK9zNxhmG9cksSd0ihXCg27+DZ8Io8AB4WZIxG0Hml8UtDGmbVp+GmL87YcrLXLTKyP92zZRLOXHG4lz4AH/gv0QhreTX5qUrD9w2t8CQof+Bsvzu1vJMUCIOSRKf7a30/Je/Ta6SglFeUl6NpmJFqhYdBecbi/T1k8TD5dmcPJT6M0QwXeE05qa6GIpS9Ksr/8VcfnqZ06VDBz/jlSB8pzxkym2EBrxt+8Jq+S5RnrK55QReWwKJ9LyjxYfAsqOR1w03TeZiOsv+K8ozSXY/IsjKYte0RKT6MBTd45XCDNzZVlDzjy613ybIymLbpLi3uY8ETXjncoOgzUdynGO/eqLIyYJdZUvwj/bxyeKltgSWUuA9VVCaE9Ah47fCCp38tJe5DlZQJJR2E1w4vqTRcpsR9qJIyoaSD8NrhBSU7RekgVEmZUNJBeO3wgpLk5c+HKimLSP4JouSgKB2EKiqLSC6DlHQQqqgsIrkRoqSDUEVlEcmtMCUdhCoqhagehijpIGRZCUT2OExJB6HKhk2kCyKUdBCqcJhEviSGkm9F6SBTysNbBBWZEIuieCv8DyXu8+Pvj8ny+TJhlsWrL0IpPhDdp+QZbEH06+33SImxouQPI3HixIkTJ45q0bT/AT1DT1cLjmxrAAAAAElFTkSuQmCC" InformativeScreenshot="75ad521628147039fbac9916d42e18cd.jpg" Selector="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" Title="Google Contacts" Url="https://contacts.google.com/" />
+                        <uix:TargetApp Area="-8, -8, 1936, 1056" Arguments="c:\users\user-lab\downloads" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ5SURBVFhH7ZTbb1RlFMWriQ/6VKLRGH0iMagIYqVF1Hj5T1C52ZaWAoOVXui9WpUBLXJpYRCwVlG5xKQh0TeTUbQM0Csttkyv006n05beZjrT5drfd047J8HaOUx8MOxk5Zyeac767bX3d5Lu1/26W0X6TyF4NQtjjRkY92Ri4loW7lzfiammXZhu2YOZtr2YvZmLUGcewrcKMPfXfkS7SxD1liHaUxk0XmO/4P8eUV89JppyMXY1AxOeHQTIxmRTDqaad2Om1YHZ9g8Q6tiHcGc+AQoR6S5G9HYp5r0VMF5jv+A/B4xcwLz/AiZbC3UK17MweYMpNOsUZtuZQkcuAfIIUIBIVxEBSghQngiA7wD/t4Q4DwQvY7qjimPQKUwxhWkzhZs6hTmOIdK1X6Uwf7ssEQA0H66n6ghxkRC/INRTQwCm0LSTALsIoFMIdXxIgDxE1BiKCFCaCAAx/0YDKIgfCfGzSmHyhk5hpoUptDkQ4jKGO/cRQKcgYzBeY7909ybA1xT/Hr2sdkFSmJIUWpiCAHAZBWDuVr4BUJwIADE3AIbO6mugAeM8EXeMFBbGwCMZNsfQVcjjWJQIAOlcANj90GmK18BPPJLpPJKZBGAKzRxD624COBCWMSiAgkQCSPdnqK8AH68jl/hhStdjYArmGGbb9qgxpOU34NWP3Bal8pnxyvhKAxjd+1wUIfznEfzzfesYZA84hhBPw8ZKN94+6bPolQr3PQBI975TwOBJilf/Dxj9Y7tKYeIaxyDLaIxBADbQ7C2axirNPgAXz+x+sFZDDJ8jwDaMMQXZA/M0aAAHUsvdePOEz6L1fGa8Mr6ydD9QoyGG6hG4sm1xDCaA2gMHXqbZGzSNVUqZbYCY7geOa4ihOgR+30qA7QRI14to7IEsopi9Xuuz6KVSuwCq+xPaeOAodYxAZxH4bQuCMgZzD9T3IEcBrKPZazU+i160DTBodk/j/iNaPAkjBFB70Kj3IBZgbQmPHk1jtYbPjFfGV5bu+w8DfV/y3gW/AHAPsp1OrNrboAxMpRxox8bjPovk2epi94JW5lzC01vrXIbNP5el+75qrYFaAmzGKPdAEshyHsTaSg820Gg5eoH/+9RyzKXU4vUb3fd+rkDme49g2L1ZLaIAjHsysMN5CGsqPEg7xjO/hFbzf55crrmU7p6xS+cCwBGMNmYvAKiTQAA5ipmEEINUGt1Nz5d78PiWOMylVPd9Rve9h6hqDP767mICMQDyLch0foHnaLT+KD8+MXqWzx57L05zqcXuad7jVCBLAcjXMMNZjVVlHqTQWCT3j9oxl0LvYZfu/iABPlMQxk9L1goaPlPqgWjFptNn+OhB/YuNgte5CT0HaP6pgjAe/2slv1PnEvH2CeoR6h4g+qrWwftxEN5PBOBh6iHqAfntPyt0O5PRXXWRt8mUAPyfKinpb4Pdbxrhmxy/AAAAAElFTkSuQmCC" InformativeScreenshot="5eaa3563ac50690b83290ef73babde19.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads' /&gt;" Title="_Ronaldo Tut - Google Contacts" />
                       </uix:NApplicationCard.TargetApp>
                     </uix:NApplicationCard>
                   </Sequence>
