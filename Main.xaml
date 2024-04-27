@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1234,2811" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +25,26 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -53,13 +73,178 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="800,2746" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtCheck" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="738,2658" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,2548" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="642,2463" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="CellPhone Numbers.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,2131" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="546,1340" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:B16&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1110" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Contacts" sap:VirtualizedContainerService.HintSize="450,1025" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="93255fa1-bfe4-40e9-9a6b-38e84052ac12" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,785" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First nameFirst'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="93255fa1-bfe4-40e9-9a6b-38e84052ac12" Text="[CurrentRow(&quot;Name&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://contacts.google.com/new" CvElementArea="383, 569, 524, 43" CvType="InputBox" DesignTimeRectangle="386, 571, 520, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' class='qdOxv-fmcmS-yrriRe qdOxv-fmcmS-yrriRe-OWXEXe-INsAgc' aaname='' check:innerText='First name&amp;#xD;&amp;#xA;First name&amp;#xD;&amp;#xA;First name' /&gt;" Guid="c05946aa-8f31-4104-a859-34ba89f052c0" InformativeScreenshot="abcff25c882e4512c94e6d6c840d7e6a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="93255fa1-bfe4-40e9-9a6b-38e84052ac12" Text="[CurrentRow(&quot;Contact&quot;).ToString]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://contacts.google.com/new" CvElementArea="474, 919, 434, 43" CvType="InputBox" DesignTimeRectangle="494, 921, 396, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='c256' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c256' tag='INPUT' type='tel' class='VfPpkd-fmcmS-wGMbrd ZUPIVd' aaname='Phone' /&gt;" Guid="72bd915d-11c6-470b-8e35-507211f3d0c5" InformativeScreenshot="9eff513148c62c67b35c35c6a8ceb08d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CvElementArea="474, 919, 434, 43" CvType="InputBox" DesignTimeRectangle="478, 921, 428, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='c248' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='c248' tag='LABEL' type='' class='VfPpkd-fmcmS-yrriRe VfPpkd-fmcmS-yrriRe-OWXEXe-mWPk3d VfPpkd-ksKsZd-mWPk3d VfPpkd-fmcmS-yrriRe-OWXEXe-INsAgc VfPpkd-fmcmS-yrriRe-OWXEXe-i3jM8c-fmcmS cfWmIb orScbe GVyiKb j65wjf' aaname='' check:innerText='Phone' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="93255fa1-bfe4-40e9-9a6b-38e84052ac12" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://contacts.google.com/new" CvElementArea="878, 275, 85, 44" CvTextArea="902, 290, 35, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="880, 277, 80, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Save' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Save' tag='BUTTON' type='' class='UywwFc-LgbsSe' aaname='Save' check:innerText='Save' /&gt;" Guid="c847181d-f4c7-42ee-9b9c-431e3b37bd38" InformativeScreenshot="3dc1fec519ee2541844dc4645afa012b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CvElementArea="878, 275, 85, 44" CvTextArea="902, 290, 35, 13" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="904, 287, 32, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Save' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' tag='SPAN' type='' class='UywwFc-vQzf8d' check:innerText='Save' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQSSURBVHhe7ZldaBRXGIbHxGjRC1vQFkXaoKUVQS8qiF5YUFCoVG/EzMwGNaKsaNUWrSARyY9JVpOM6JUKxaIQTfbGi6JeiehNxJkYEP8SIaig9EIlCmtimszX74xn4uTkUza7czI5y7zwQNid+fZ9htnMzFktTpw4ceKMZ5LONM20N2iGXaXp9lkP9jd7jb1XsDFvfaMZzilNd94h7id4523Dti2oGPZ6lHsjyH6ON94+BRHDTqLQoCCYDYPevkon4axEkQFBbCwMeDOUTNIpQYEeQSgXerxZykW3dxMyOYKzlIvutI8WyZl2PlWRmM5MLD0kSOTDkDdTmSTspYREfrCZysS8vY6UyAc2U5mU3f6ZlMgHNlOZ6M78UQL5M59PVyS681QQyIenfKpC0Z0TgkQ+nOBTFUr5rblYPCOI5ELGm6VkDOcwITQ22AxlAzAJJS6NksqeS94MpbPnylQUOSeIZcM5b9+CidFRoZU5zwjRkbBt2LYFmYrrX2imbeL3ugVlu5C3nC7vNfYe2yZOnDhxCiV1LfBdXSss+/Pv98ZG6+WhVVXPU5pub6ZYuP9549KDLw+tTw0kdQs2i5jHYHX5cVi0qQmm8/ETL55wG+xtaINr9W0wYFiv3R/2druTEx30ZY+gyOxwZye73eWVr129CVy9eRR9G5vginkcyvjHRp/qFpiH0heQIcT97XTGnbPjASk4Fr7a+sBdU5OhDoKHYYGjN8JPvMb458wZKDnaChZK9zNxhmG9cksSd0ihXCg27+DZ8Io8AB4WZIxG0Hml8UtDGmbVp+GmL87YcrLXLTKyP92zZRLOXHG4lz4AH/gv0QhreTX5qUrD9w2t8CQof+Bsvzu1vJMUCIOSRKf7a30/Je/Ta6SglFeUl6NpmJFqhYdBecbi/T1k8TD5dmcPJT6M0QwXeE05qa6GIpS9Ksr/8VcfnqZ06VDBz/jlSB8pzxkym2EBrxt+8Jq+S5RnrK55QReWwKJ9LyjxYfAsqOR1w03TeZiOsv+K8ozSXY/IsjKYte0RKT6MBTd45XCDNzZVlDzjy613ybIymLbpLi3uY8ETXjncoOgzUdynGO/eqLIyYJdZUvwj/bxyeKltgSWUuA9VVCaE9Ah47fCCp38tJe5DlZQJJR2E1w4vqTRcpsR9qJIyoaSD8NrhBSU7RekgVEmZUNJBeO3wgpLk5c+HKimLSP4JouSgKB2EKiqLSC6DlHQQqqgsIrkRoqSDUEVlEcmtMCUdhCoqhagehijpIGRZCUT2OExJB6HKhk2kCyKUdBCqcJhEviSGkm9F6SBTysNbBBWZEIuieCv8DyXu8+Pvj8ny+TJhlsWrL0IpPhDdp+QZbEH06+33SImxouQPI3HixIkTJ45q0bT/AT1DT1cLjmxrAAAAAElFTkSuQmCC" InformativeScreenshot="b65403cd93cd875bd5da334394e87c25.jpg" Selector="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" Title="Google Contacts" Url="https://contacts.google.com/new" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Google Contacts" sap:VirtualizedContainerService.HintSize="546,706" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="bd873a04-ba01-4333-9f8e-0e0e89d3ef31" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,466" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'handymanMerge &amp; fix4'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd873a04-ba01-4333-9f8e-0e0e89d3ef31" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://contacts.google.com/" CvTextArea="73, 506, 172, 16" CvTextArgument="Merge &amp; fix 4" CvType="Text" DesignTimeRectangle="20, 491, 243, 44" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;gm-coplanar-drawer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='DYhT6b' aaname='' check:innerText='handyman&amp;#xD;&amp;#xA;Merge &amp;amp; fix&amp;#xD;&amp;#xA;4' /&gt;" Guid="95e3d07d-bec3-4a88-95d3-8a29b105eb47" InformativeScreenshot="213a6440052a4b68f625abc4c6021787.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd873a04-ba01-4333-9f8e-0e0e89d3ef31" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://contacts.google.com/suggestions" CvElementArea="1201, 256, 113, 45" CvTextArea="1226, 271, 61, 16" CvTextArgument="Merge all" CvType="Button" DesignTimeRectangle="1200, 256, 113, 45" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='RBHQF-ksKsZd' css-selector='body&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' idx='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='RBHQF-ksKsZd' type='' aaname='' tag='SPAN' /&gt;" Guid="ad5b8593-a9f9-45bb-9c36-e938ad9b4dad" InformativeScreenshot="94668d6ed34342e5c1a995ffb3d7767c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merge &amp;amp; fix' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQSSURBVHhe7ZldaBRXGIbHxGjRC1vQFkXaoKUVQS8qiF5YUFCoVG/EzMwGNaKsaNUWrSARyY9JVpOM6JUKxaIQTfbGi6JeiehNxJkYEP8SIaig9EIlCmtimszX74xn4uTkUza7czI5y7zwQNid+fZ9htnMzFktTpw4ceKMZ5LONM20N2iGXaXp9lkP9jd7jb1XsDFvfaMZzilNd94h7id4523Dti2oGPZ6lHsjyH6ON94+BRHDTqLQoCCYDYPevkon4axEkQFBbCwMeDOUTNIpQYEeQSgXerxZykW3dxMyOYKzlIvutI8WyZl2PlWRmM5MLD0kSOTDkDdTmSTspYREfrCZysS8vY6UyAc2U5mU3f6ZlMgHNlOZ6M78UQL5M59PVyS681QQyIenfKpC0Z0TgkQ+nOBTFUr5rblYPCOI5ELGm6VkDOcwITQ22AxlAzAJJS6NksqeS94MpbPnylQUOSeIZcM5b9+CidFRoZU5zwjRkbBt2LYFmYrrX2imbeL3ugVlu5C3nC7vNfYe2yZOnDhxCiV1LfBdXSss+/Pv98ZG6+WhVVXPU5pub6ZYuP9549KDLw+tTw0kdQs2i5jHYHX5cVi0qQmm8/ETL55wG+xtaINr9W0wYFiv3R/2druTEx30ZY+gyOxwZye73eWVr129CVy9eRR9G5vginkcyvjHRp/qFpiH0heQIcT97XTGnbPjASk4Fr7a+sBdU5OhDoKHYYGjN8JPvMb458wZKDnaChZK9zNxhmG9cksSd0ihXCg27+DZ8Io8AB4WZIxG0Hml8UtDGmbVp+GmL87YcrLXLTKyP92zZRLOXHG4lz4AH/gv0QhreTX5qUrD9w2t8CQof+Bsvzu1vJMUCIOSRKf7a30/Je/Ta6SglFeUl6NpmJFqhYdBecbi/T1k8TD5dmcPJT6M0QwXeE05qa6GIpS9Ksr/8VcfnqZ06VDBz/jlSB8pzxkym2EBrxt+8Jq+S5RnrK55QReWwKJ9LyjxYfAsqOR1w03TeZiOsv+K8ozSXY/IsjKYte0RKT6MBTd45XCDNzZVlDzjy613ybIymLbpLi3uY8ETXjncoOgzUdynGO/eqLIyYJdZUvwj/bxyeKltgSWUuA9VVCaE9Ah47fCCp38tJe5DlZQJJR2E1w4vqTRcpsR9qJIyoaSD8NrhBSU7RekgVEmZUNJBeO3wgpLk5c+HKimLSP4JouSgKB2EKiqLSC6DlHQQqqgsIrkRoqSDUEVlEcmtMCUdhCoqhagehijpIGRZCUT2OExJB6HKhk2kCyKUdBCqcJhEviSGkm9F6SBTysNbBBWZEIuieCv8DyXu8+Pvj8ny+TJhlsWrL0IpPhDdp+QZbEH06+33SImxouQPI3HixIkTJ45q0bT/AT1DT1cLjmxrAAAAAElFTkSuQmCC" InformativeScreenshot="75ad521628147039fbac9916d42e18cd.jpg" Selector="&lt;html app='chrome.exe' title='Google Contacts' /&gt;" Title="Google Contacts" Url="https://contacts.google.com/" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
   </Sequence>
 </Activity>
